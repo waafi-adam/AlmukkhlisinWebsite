@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+body {
+  font: 15px/1.5 "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Global */
+.container {
+  width: 90vw;
+  margin: auto;
+  overflow: hidden;
+}
+a:hover {
+  opacity: 0.5;
+}
+a {
+  transition-duration: 0.4s, 4s;
+}
+
+/* Header */
+header {
+  background: rgba(128, 128, 128, 0);
+  min-height: 100vh;
+}
+#bgmasjid {
+  background-image: url("../01_IMG/home/BG_Masjid.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+.header-links {
+  text-decoration: none;
+  color: #ffffff;
+}
+header .button-joinus {
+  display: inline;
+  background: #b1c788;
+  padding: 5px;
+}
+header ul {
+  color: #ffffff;
+  margin: 0;
+  padding: 10px 0 0 0;
+}
+header li {
+  display: inline;
+  padding: 0 5px 0 5px;
+}
+.headerlogo {
+  float: left;
+  margin: 0;
+  height: 80px;
+}
+header nav {
+  float: right;
+}
+header h1 {
+  margin: auto;
+}
+#bgmasjid h1 {
+  color: #ffffff;
+  text-align: center;
+  display: block;
+  font-size: 50px;
+  margin-bottom: 10px;
+}
+.button-joinus2 {
+  display: block;
+  float: none;
+  text-align: center;
+  width: 70px;
+  background: #b1c788;
+  padding: 5px;
+  margin: auto;
+}
+header {
+  position: relative;
+}
+.text-header {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* BOXES SECTION */
+#boxes {
+  /* width: 800px; */
+  /* height: 300px; */
+  /* height: 500px; */
+}
+.center-box {
+  margin: auto;
+  width: 800px;
+}
+#boxes h3 {
+  display: block;
+}
+#boxes .blocks-eps {
+  display: inline-block;
+  text-align: center;
+  width: 220px;
+  margin: 0 10px 0 10px;
+  /* flex-basis: 48%;
+  text-align: center;
+  border-radius: wrap;
+  justify-content: space-around;
+  margin: auto; */
+}
+.img-eps {
+  height: 220px;
+}
+
+/* BOTTOM SECTION */
+#bottom {
+  min-height: 100vh;
+  background: #b1c788;
+  position: relative;
+}
+#bottom .cropped {
+  width: 400px; /* width of container */
+  height: 80vh; /* height of container */
+  object-fit: cover;
+  object-position: 50% 10%; /* try 20px 10px */
+  display: inline-block;
+}
+
+#bottom p {
+  width: 300px;
+  font-size: 24px;
+  color: white;
+}
+#bottom .button-white {
+  text-align: center;
+  background: #ffffff;
+  display: inline;
+  padding: 5px;
+}
+#bottom a {
+  text-decoration: none;
+  color: #b1c788;
+}
+#bottom .box {
+  display: inline-block;
+  margin: 0 15px 0 15px;
+  vertical-align: middle;
+}
+#bottom .box-center {
+  margin: auto;
+  width: 764px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* Footer */
+footer {
+  position: relative;
+}
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+footer li {
+  display: inline;
+  padding: 10px;
+}
+li a {
+  color: #5c5a5a;
+  text-decoration: none;
+  display: inline-block;
+}
+footer .center-nav {
+  text-align: center;
+}
+footer .nav-footer {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+footer .social-footer {
+  display: block;
+}
+footer .nav-footer {
+  display: block;
+}
+footer p {
+  text-align: center;
+  color: #a5a5a5;
+}
+
+/* MOBILE PHONE VERSION */
+@media screen and (max-width: 750px) {
+  header .headerlogo {
+    display: block;
+    float: none;
+    margin: auto;
+  }
+  header nav,
+  header nav li {
+    float: none;
+    text-align: center;
+    width: 100%;
+  }
+  /* BOXES SECTION */
+  #boxes .h-ep {
+    text-align: center;
+    font-size: 30px;
+    margin: 20px auto 20px auto;
+  }
+  #boxes .center-box {
+    width: 240px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #boxes .blocks-eps {
+    display: block;
+    float: none;
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  #boxes p {
+    margin-top: 0;
+    margin-bottom: 40px;
+  }
+  #boxes .blocks-eps h3 {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  /* BOTTOM SECTION */
+  #bottom .cropped {
+    height: 500px;
+    width: 400px;
+  }
+  #bottom .box {
+    display: block;
+    margin: 0 auto 0 auto;
+    vertical-align: middle;
+    text-align: center;
+    float: none;
+    width: max-content;
+  }
+  #bottom p {
+    width: 400px;
+  }
+}

@@ -1,0 +1,39 @@
+header {
+  background: #cfcfcf;
+}
+header a img {
+  height: 70px;
+}
+header nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+header nav ul {
+  margin: 10px 0 0 0;
+  padding: 0;
+  float: right;
+}
+header nav li {
+  display: inline;
+  padding: 0 20px 0 0;
+}
+header nav li .button-joinus {
+  display: inline;
+  padding: 0 20px 0 0;
+}
+#nav-series a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+}
+#nav-series ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+#nav-series li {
+  display: inline;
+  margin: 0 20px 0 0;
+}
